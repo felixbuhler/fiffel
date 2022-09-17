@@ -1,13 +1,13 @@
 import React from 'react'
 
 function Header() {
-  return (
-    <header className='sticky bg-white z-10 p-2 w-full flex flex-nowrap border-blue-700 border'>
-        <h1>Kiffel</h1>
-        <div className='logo'>LOGO</div>
-        
-    </header>
-  )
+    return (
+        <header>
+            <h1 className='w-1/2'><div className='kniffel-logo'></div></h1>
+            <div className='logo  w-1/2 text-end'></div>
+
+        </header>
+    )
 }
 
 export default Header
