@@ -5,6 +5,10 @@
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
     <!-- Kniffel.js -->
@@ -187,22 +191,22 @@
                             autocomplet="name" /></div>
                     <!-- Einser -->
                     <div class="tablerow einser no-padding"><input id="valueEinser" type="number" placeholder="Einser"
-                            min="" max="" onchange="getValEinser()" pattern="\d*" /></div>
+                            min="1" max="5" onchange="getValEinser()" pattern="\d*" /></div>
                     <!-- Zweier -->
                     <div class="tablerow zweier no-padding"><input id="valueZweier" type="number" placeholder="Zweier"
-                            min="" max="" onchange="getValZweier()" pattern="\d*" /></div>
+                            min="2" max="10" onchange="getValZweier()" pattern="\d*" /></div>
                     <!-- Dreier -->
                     <div class="tablerow dreier no-padding"><input id="valueDreier" type="number" placeholder="Dreier"
-                            min="" max="" onchange="getValDreier()" pattern="\d*" /></div>
+                            min="3" max="15" onchange="getValDreier()" pattern="\d*" /></div>
                     <!-- Vierer -->
                     <div class="tablerow vierer no-padding"><input id="valueVierer" type="number" placeholder="Vierer"
-                            min="" max="" onchange="getValVierer()" pattern="\d*" /></div>
+                            min="4" max="20" onchange="getValVierer()" pattern="\d*" /></div>
                     <!-- Fünfer -->
                     <div class="tablerow fuenfer no-padding"><input id="valueFuenfer" type="number" placeholder="Fünfer"
-                            min="" max="" onchange="getValFuenfer()" pattern="\d*" /></div>
+                            min="5" max="25" onchange="getValFuenfer()" pattern="\d*" /></div>
                     <!-- Sechser -->
                     <div class="tablerow sechser no-padding"><input id="valueSechser" type="number"
-                            placeholder="Sechser" min="" max="" onchange="getValSechser()" pattern="\d*" /></div>
+                            placeholder="Sechser" min="6" max="30" onchange="getValSechser()" pattern="\d*" /></div>
                     <!-- Separator Small-->
                     <div class="tablerow separator-small"></div>
                     <!-- Gesamt oben -->
@@ -227,24 +231,29 @@
                     <div class="tablerow separator-big"></div>
                     <!-- Dreierpasch -->
                     <div class="tablerow border-top no-padding"><input id="valueDreierpasch" type="number"
-                            placeholder="Dreierpasch" min="" max="" onchange="getValDreierpasch()" pattern="\d*" />
+                            placeholder="Dreierpasch" onchange="getValDreierpasch()" pattern="\d*" />
                     </div>
                     <!-- Viererpasch -->
-                    <div class="tablerow no-padding"><input id="valueViererpasch" type="number" placeholder="Viererpasch" min=""
-                            max="" onchange="getValViererpasch()" pattern="\d*" /></div>
+                    <div class="tablerow no-padding"><input id="valueViererpasch" type="number"
+                            placeholder="Viererpasch" onchange="getValViererpasch()" pattern="\d*" />
+                    </div>
                     <!-- Full House -->
-                    <div class="tablerow no-padding"><input id="full-house" type="checkbox" onchange="getValFullHouse()" /></div>
+                    <div class="tablerow no-padding"><input id="full-house" type="checkbox"
+                            onchange="getValFullHouse()" /></div>
                     <!-- Kleine Straße -->
-                    <div class="tablerow no-padding"><input id="kleine-strasse" type="checkbox" onchange="getValKleineStrasse()" />
+                    <div class="tablerow no-padding"><input id="kleine-strasse" type="checkbox"
+                            onchange="getValKleineStrasse()" />
                     </div>
                     <!-- Große Straße -->
-                    <div class="tablerow no-padding"><input id="grosse-strasse" type="checkbox" onchange="getValGrosseStrasse()" />
+                    <div class="tablerow no-padding"><input id="grosse-strasse" type="checkbox"
+                            onchange="getValGrosseStrasse()" />
                     </div>
                     <!-- Kniffel -->
-                    <div class="tablerow no-padding"><input id="kniffel" type="checkbox" onchange="getValKniffel()" /></div>
+                    <div class="tablerow no-padding"><input id="kniffel" type="checkbox" onchange="getValKniffel()" />
+                    </div>
                     <!-- Chance -->
-                    <div class="tablerow no-padding"><input id="valueChance" type="number" placeholder="Chance" min="" max=""
-                            onchange="getValChance()" pattern="\d*" /></div>
+                    <div class="tablerow no-padding"><input id="valueChance" type="number" placeholder="Chance" min="5"
+                            max="30" onchange="getValChance()" pattern="\d*" /></div>
                     <!-- Separator Small-->
                     <div class="tablerow separator-small"></div>
                     <!-- Gesamter unterer Teil -->

@@ -18,8 +18,9 @@ body {
     font-size: var(--font-size);
 
     color: var(--color);
-    font-family: sans-serif;
     vertical-align: middle;
+    font-family: 'Inter', sans-serif;
+
 }
 
 main {
@@ -43,7 +44,7 @@ grid {
 h1 {
     color: transparent;
     height: 60px;
-    width: 50%;
+    width: 100%;
     background: url(image/logo.svg)top left no-repeat;
     background-size: contain;
 }
@@ -58,7 +59,7 @@ h1 {
 
 .columns {
     display: grid;
-    grid-template-columns: 1fr calc(2 * var(--padding-tablerow) + var(--font-size)) 100px;
+    grid-template-columns: 1fr calc(2 * var(--padding-tablerow) + var(--font-size)) 130px;
     grid-auto-flow: row;
     border-top: var(--border);
 }
@@ -85,6 +86,7 @@ h1 {
 
 .info .tablerow {
     border-left: var(--border);
+    font-weight: bold;
 }
 
 .player .tablerow {
@@ -111,6 +113,7 @@ h1 {
     border: none;
     border-radius: 0;
     text-align: center;
+    color: var(--color);
 }
 
 .tablerow.no-padding input {
@@ -127,6 +130,25 @@ h1 {
     height: 20px;
     border: none;
 }
+
+.player .tablerow input[type="checkbox"] {
+    -webkit-appearance: none;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    margin-left: calc(50% - 10px);
+    margin-top: 3px;
+    border: var(--border);
+}
+
+.player .tablerow input[type="checkbox"]:checked {
+    background: var(--color);
+}
+
+input::placeholder{
+    color: rgb(190, 190, 255);
+  }
 
 .dice {
     width: 20px;
@@ -153,15 +175,15 @@ h1 {
 }
 
 .dice.vierer {
-    background: url(image/dice-einser.svg);
+    background: url(image/dice-vierer.svg);
 }
 
 .dice.fuenfer {
-    background: url(image/dice-zweier.svg);
+    background: url(image/dice-fuenfer.svg);
 }
 
 .dice.sechser {
-    background: url(image/dice-dreier.svg);
+    background: url(image/dice-sechser.svg);
 }
 
 .info-tooltip {
@@ -170,6 +192,8 @@ h1 {
     border-radius: 50%;
     background: var(--color);
     color: white;
+    margin: 0 auto;
+    margin-top: -3px;
 }
 
 
@@ -177,4 +201,25 @@ h1 {
     content: "i";
     line-height: 15px;
     vertical-align: middle;
+}
+
+.tippy-box[data-theme~='kiffel'] {
+    background-color: var(--color);
+    color: white;
+}
+
+.tippy-box[data-theme~='kiffel'][data-placement^='top']>.tippy-arrow::before {
+    border-top-color: var(--color);
+}
+
+.tippy-box[data-theme~='kiffel'][data-placement^='bottom']>.tippy-arrow::before {
+    border-bottom-color: var(--color);
+}
+
+.tippy-box[data-theme~='kiffel'][data-placement^='left']>.tippy-arrow::before {
+    border-left-color: var(--color);
+}
+
+.tippy-box[data-theme~='kiffel'][data-placement^='right']>.tippy-arrow::before {
+    border-right-color: var(--color);
 }
