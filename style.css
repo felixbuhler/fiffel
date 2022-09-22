@@ -57,6 +57,11 @@ h1 {
     padding: var(--padding-tablerow);
 }
 
+.arrow:before {
+    content: "➜";
+    font-weight: normal;
+}
+
 .columns {
     display: grid;
     grid-template-columns: 1fr calc(2 * var(--padding-tablerow) + var(--font-size)) 130px;
@@ -86,6 +91,10 @@ h1 {
 
 .info .tablerow {
     border-left: var(--border);
+    font-weight: bold;
+}
+
+.description .tablerow {
     font-weight: bold;
 }
 
@@ -146,9 +155,9 @@ h1 {
     background: var(--color);
 }
 
-input::placeholder{
+input::placeholder {
     color: rgb(190, 190, 255);
-  }
+}
 
 .dice {
     width: 20px;
@@ -222,4 +231,24 @@ input::placeholder{
 
 .tippy-box[data-theme~='kiffel'][data-placement^='right']>.tippy-arrow::before {
     border-right-color: var(--color);
+}
+
+footer {
+    padding-top: 30px;
+    text-align: center;
+}
+
+footer a {
+    color: inherit;
+    background: white;
+    text-decoration: none;
+    border: 1px solid currentColor;
+    padding: 0 5px;
+    border-radius: 20px;
+}
+
+footer a:hover {
+    color: white;
+    background: var(--color);
+    border-color: var(--color);
 }
