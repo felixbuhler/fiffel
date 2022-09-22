@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color: blue;
+    --border-width: 2px;
+    --border-style: solid;
+    --border: var(--border-width) var(--border-style) var(--color);
+    --padding-tablerow: 10px;
+    --font-size: 12px;
+    --line-height: var(--font-size);
+}
+
+body {
+    font-size: var(--font-size);
+
+    color: var(--color);
+    font-family: sans-serif;
+    vertical-align: middle;
+}
+
+main {
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+header {
+    padding: calc(2 * var(--padding-tablerow));
+    border: var(--border);
+    border-bottom: none;
+}
+
+grid {
+    display: block;
+    position: relative;
+}
+
+h1 {
+    color: transparent;
+    height: 60px;
+    width: 50%;
+    background: url(image/logo.svg)top left no-repeat;
+    background-size: contain;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.padding {
+    padding: var(--padding-tablerow);
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: 1fr calc(2 * var(--padding-tablerow) + var(--font-size)) 100px;
+    grid-auto-flow: row;
+    border-top: var(--border);
+}
+
+
+
+.tablerow {
+    display: block;
+    padding: 0;
+    min-height: 0;
+    line-height: 0px;
+    padding: var(--padding-tablerow);
+    border-bottom: var(--border);
+    height: calc(2 * var(--padding-tablerow) + var(--font-size));
+    overflow: hidden;
+    line-height: var(--line-height);
+    border-right: var(--border);
+}
+
+.description .tablerow {
+    padding: var(--padding-tablerow) 0;
+    text-align: center;
+}
+
+.info .tablerow {
+    border-left: var(--border);
+}
+
+.player .tablerow {
+    text-align: center;
+    border-right: var(--border);
+}
+
+.tablerow.no-padding {
+    padding: 0;
+}
+
+.tablerow.no-border {
+    border-right: none;
+}
+
+.tablerow.border-top {
+    border-top: var(--border);
+}
+
+.tablerow input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    border-radius: 0;
+    text-align: center;
+}
+
+.tablerow.no-padding input {
+    padding: var(--padding-tablerow);
+}
+
+.tablerow.separator-small {
+    padding: 0;
+    height: 5px;
+}
+
+.tablerow.separator-big {
+    padding: 0;
+    height: 20px;
+    border: none;
+}
+
+.dice {
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    border: var(--border);
+    border-radius: 6px;
+    display: inline-block;
+    margin-top: calc(-0.5 * var(--padding-tablerow));
+    margin-left: calc(-0.5 * var(--padding-tablerow));
+    margin-right: calc(0.5 * var(--padding-tablerow));
+}
+
+.dice.einser {
+    background: url(image/dice-einser.svg);
+}
+
+.dice.zweier {
+    background: url(image/dice-zweier.svg);
+}
+
+.dice.dreier {
+    background: url(image/dice-dreier.svg);
+}
+
+.dice.vierer {
+    background: url(image/dice-einser.svg);
+}
+
+.dice.fuenfer {
+    background: url(image/dice-zweier.svg);
+}
+
+.dice.sechser {
+    background: url(image/dice-dreier.svg);
+}

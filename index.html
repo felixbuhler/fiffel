@@ -1,10 +1,239 @@
 <!DOCTYPE html>
-  <head>
+
+<head>
     <title>Kiffel</title>
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
+    <link rel="stylesheet" href="style.css">
+    <script src="kiffel.js"></script>
+</head>
 
-  <body></body>
+<body>
+
+    <main>
+        <grid>
+            <header>
+                <h1>Kniffel</h1>
+            </header>
+            <div class="columns">
+                <div class="column info">
+                    <!-- FIRST ROW -->
+                    <div class="tablerow no-border"></div>
+                    <!-- Einser -->
+                    <div class="tablerow einser">
+                        <div class="dice einser"></div>
+                        <div class="dice einser"></div>
+                        <div class="dice einser"></div>
+                    </div>
+                    <!-- Zweier -->
+                    <div class="tablerow zweier">
+                        <div class="dice zweier"></div>
+                        <div class="dice zweier"></div>
+                        <div class="dice zweier"></div>
+                    </div>
+                    <!-- Dreier -->
+                    <div class="tablerow dreier">
+                        <div class="dice dreier"></div>
+                        <div class="dice dreier"></div>
+                        <div class="dice dreier"></div>
+                    </div>
+                    <!-- Vierer -->
+                    <div class="tablerow vierer">
+                        <div class="dice vierer"></div>
+                        <div class="dice vierer"></div>
+                        <div class="dice vierer"></div>
+                    </div>
+                    <!-- Fünfer -->
+                    <div class="tablerow fuenfer">
+                        <div class="dice fuenfer"></div>
+                        <div class="dice fuenfer"></div>
+                        <div class="dice fuenfer"></div>
+                    </div>
+                    <!-- Sechser -->
+                    <div class="tablerow sechser">
+                        <div class="dice sechser"></div>
+                        <div class="dice sechser"></div>
+                        <div class="dice sechser"></div>
+                    </div>
+                    <!-- Separator Small-->
+                    <div class="tablerow separator-small"></div>
+                    <!-- Gesamt oben -->
+                    <div class="tablerow">Gesamt</div>
+                    <!-- Separator Small-->
+                    <div class="tablerow separator-small"></div>
+                    <!-- Bonus -->
+                    <div class="tablerow">Bonus bei 63 oder mehr</div>
+                    <!-- Separator Small-->
+                    <div class="tablerow separator-small"></div>
+                    <!-- Bonus oberer Teil-->
+                    <div class="tablerow">Bonus oberer Teil</div>
+                    <!-- Separator Big -->
+                    <div class="tablerow separator-big"></div>
+                    <!-- Dreierpasch -->
+                    <div class="tablerow border-top">Dreierpasch</div>
+                    <!-- Viererpasch -->
+                    <div class="tablerow">Viererpasch</div>
+                    <!-- Full House -->
+                    <div class="tablerow">Full House</div>
+                    <!-- Kleine Straße -->
+                    <div class="tablerow">Kleine Straße</div>
+                    <!-- Große Straße -->
+                    <div class="tablerow">Große Straße</div>
+                    <!-- Kniffel -->
+                    <div class="tablerow">Kniffel</div>
+                    <!-- Chance -->
+                    <div class="tablerow">Chance</div>
+                    <!-- Separator Small-->
+                    <div class="tablerow separator-small"></div>
+                    <!-- Gesamter unterer Teil -->
+                    <div class="tablerow">Gesamter unterer Teil</div>
+                    <!-- Separator Small-->
+                    <div class="tablerow separator-small"></div>
+                    <!-- Gesamter oberer Teil -->
+                    <div class="tablerow">Gesamter oberer Teil</div>
+                    <!-- Separator Small-->
+                    <div class="tablerow separator-small"></div>
+                    <!-- Gesamt -->
+                    <div class="tablerow">Gesamt</div>
+                </div>
+                <div class="column description">
+                    <!-- FIRST ROW -->
+                    <div class="tablerow no-border"></div>
+                    <!-- Einser -->
+                    <div class="tablerow einser"></div>
+                    <!-- Zweier -->
+                    <div class="tablerow zweier"></div>
+                    <!-- Dreier -->
+                    <div class="tablerow dreier"></div>
+                    <!-- Vierer -->
+                    <div class="tablerow vierer"></div>
+                    <!-- Fünfer -->
+                    <div class="tablerow fuenfer"></div>
+                    <!-- Sechser -->
+                    <div class="tablerow sechser"></div>
+                    <!-- Separator Small-->
+                    <div class="tablerow separator-small"></div>
+                    <!-- Gesamt oben -->
+                    <div class="tablerow">&rarr;</div>
+                    <!-- Separator Small-->
+                    <div class="tablerow separator-small"></div>
+                    <!-- Gesamt oben -->
+                    <div class="tablerow">&rarr;</div>
+                    <!-- Separator Small-->
+                    <div class="tablerow separator-small"></div>
+                    <!-- Gesamt oben -->
+                    <div class="tablerow">&rarr;</div>
+                    <!-- Separator Big -->
+                    <div class="tablerow separator-big"></div>
+                    <!-- Dreierpasch -->
+                    <div class="tablerow border-top">Dreierpasch</div>
+                    <!-- Viererpasch -->
+                    <div class="tablerow">Viererpasch</div>
+                    <!-- Full House -->
+                    <div class="tablerow">Full House</div>
+                    <!-- Kleine Straße -->
+                    <div class="tablerow">Kleine Straße</div>
+                    <!-- Große Straße -->
+                    <div class="tablerow">Große Straße</div>
+                    <!-- Kniffel -->
+                    <div class="tablerow">Kniffel</div>
+                    <!-- Chance -->
+                    <div class="tablerow">Chance</div>
+                    <!-- Separator Small-->
+                    <div class="tablerow separator-small"></div>
+                    <!-- Gesamter unterer Teil -->
+                    <div class="tablerow">&rarr;</div>
+                    <!-- Separator Small-->
+                    <div class="tablerow separator-small"></div>
+                    <!-- Gesamter oberer Teil -->
+                    <div class="tablerow">&rarr;</div>
+                    <!-- Separator Small-->
+                    <div class="tablerow separator-small"></div>
+                    <!-- Gesamt -->
+                    <div class="tablerow">&rarr;</div>
+                </div>
+                <div class="column player">
+                    <!-- FIRST ROW -->
+                    <div class="tablerow name no-padding"><input type="text" id="name" placeholder="Name"
+                            autocomplet="name" /></div>
+                    <!-- Einser -->
+                    <div class="tablerow einser no-padding"><input id="valueEinser" type="number" placeholder="Einser"
+                            min="" max="" onchange="getValEinser()" /></div>
+                    <!-- Zweier -->
+                    <div class="tablerow zweier no-padding"><input id="valueZweier" type="number" placeholder="Zweier"
+                            min="" max="" onchange="getValZweier()" /></div>
+                    <!-- Dreier -->
+                    <div class="tablerow dreier no-padding"><input id="valueDreier" type="number" placeholder="Dreier"
+                            min="" max="" onchange="getValDreier()" /></div>
+                    <!-- Vierer -->
+                    <div class="tablerow vierer no-padding"><input id="valueVierer" type="number" placeholder="Vierer"
+                            min="" max="" onchange="getValVierer()" /></div>
+                    <!-- Fünfer -->
+                    <div class="tablerow fuenfer no-padding"><input id="valueFuenfer" type="number" placeholder="Fünfer"
+                            min="" max="" onchange="getValFuenfer()" /></div>
+                    <!-- Sechser -->
+                    <div class="tablerow sechser no-padding"><input id="valueSechser" type="number"
+                            placeholder="Sechser" min="" max="" onchange="getValSechser()" /></div>
+                    <!-- Separator Small-->
+                    <div class="tablerow separator-small"></div>
+                    <!-- Gesamt oben -->
+                    <div class="tablerow">
+                        <div id="gesamt-oben-ohne-bonus" class="inline-block">0</div>
+                    </div>
+                    <!-- Separator Small-->
+                    <div class="tablerow separator-small"></div>
+                    <!-- Bonus -->
+                    <div class="tablerow no-padding" id="got-bonus">
+                        <div id="get-bonus" class="padding"></div>
+                    </div>
+                    <!-- Separator Small-->
+                    <div class="tablerow separator-small"></div>
+                    <!-- Gesamt oben + Bonus -->
+                    <div class="tablerow">
+                        <div id="gesamt-oben-mit-bonus" class="inline-block">
+                            0
+                        </div>
+                    </div>
+                    <!-- Separator Big -->
+                    <div class="tablerow separator-big"></div>
+                    <!-- Dreierpasch -->
+                    <div class="tablerow border-top"><input type="checkbox" /></div>
+                    <!-- Viererpasch -->
+                    <div class="tablerow"><input type="checkbox" /></div>
+                    <!-- Full House -->
+                    <div class="tablerow"><input type="checkbox" /></div>
+                    <!-- Kleine Straße -->
+                    <div class="tablerow"><input type="checkbox" /></div>
+                    <!-- Große Straße -->
+                    <div class="tablerow"><input type="checkbox" /></div>
+                    <!-- Kniffel -->
+                    <div class="tablerow"><input type="checkbox" /></div>
+                    <!-- Chance -->
+                    <div class="tablerow"><input id="valueChance" type="number" placeholder="Chance" min="" max=""
+                            onchange="" /></div>
+                    <!-- Separator Small-->
+                    <div class="tablerow separator-small"></div>
+                    <!-- Gesamter unterer Teil -->
+                    <div class="tablerow">0il</div>
+                    <!-- Separator Small-->
+                    <div class="tablerow separator-small"></div>
+                    <!-- Gesamter oberer Teil -->
+                    <div class="tablerow">
+                        <div id="gesamt-oben-mit-bonus-end" class="inline-block">
+                            0
+                        </div>
+                    </div>
+                    <!-- Separator Small-->
+                    <div class="tablerow separator-small"></div>
+                    <!-- Gesamt -->
+                    <div class="tablerow">0</div>
+                </div>
+
+            </div>
+        </grid>
+    </main>
+
+</body>
+
 </html>
