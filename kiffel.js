@@ -23,6 +23,8 @@ var gesamt = 0;
 function getValEinser() {
     var val = parseInt(document.getElementById("valueEinser").value);
     window['valueEinser'] = val;
+
+    console.log("Einser Dropdown ist", valueEinser);
     getGesamtObenOhneBonus();
     updateGesamt()
 }
@@ -90,14 +92,14 @@ function getGesamtObenOhneBonus() {
     document.getElementById("gesamt-oben-ohne-bonus").innerHTML = calcGesamtObenOhneBonus;
 
     if (calcGesamtObenOhneBonus >= 63) {
-        document.getElementById("get-bonus").innerHTML = "👍";
-        document.getElementById("get-bonus").style.background = "#00ff00";
+        document.getElementById("get-bonus").innerHTML = "🎉";
+        document.getElementById("get-bonus").style.background = "#6FFF87";
         window['gesamtObenMitBonus'] = calcGesamtObenOhneBonus + 35;
         document.getElementById("gesamt-oben-mit-bonus").innerHTML = gesamtObenMitBonus;
         document.getElementById("gesamt-oben-mit-bonus-end").innerHTML = gesamtObenMitBonus;
     } else {
-        document.getElementById("get-bonus").innerHTML = "👎";
-        document.getElementById("get-bonus").style.background = "#ff0000";
+        document.getElementById("get-bonus").innerHTML = "😥";
+        document.getElementById("get-bonus").style.background = "#FF5F6A";
         window['gesamtObenMitBonus'] = calcGesamtObenOhneBonus + 0;
         document.getElementById("gesamt-oben-mit-bonus").innerHTML = gesamtObenMitBonus;
         document.getElementById("gesamt-oben-mit-bonus-end").innerHTML = gesamtObenMitBonus;

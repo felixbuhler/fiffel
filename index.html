@@ -2,9 +2,10 @@
 
 <head>
     <title>Kiffel</title>
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="image/favicon.svg" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -73,7 +74,7 @@
                     <!-- Separator Small-->
                     <div class="tablerow separator-small"></div>
                     <!-- Bonus oberer Teil-->
-                    <div class="tablerow">Bonus oberer Teil</div>
+                    <div class="tablerow">Gesamter oberer Teil</div>
                     <!-- Separator Big -->
                     <div class="tablerow separator-big"></div>
                     <!-- Dreierpasch -->
@@ -202,23 +203,63 @@
                     <div class="tablerow name no-padding"><input type="text" id="name" placeholder="Name"
                             autocomplet="name" /></div>
                     <!-- Einser -->
-                    <div class="tablerow einser no-padding"><input id="valueEinser" type="number" placeholder="Einser"
-                            min="1" max="5" onchange="getValEinser()" pattern="\d*" /></div>
+                    <div class="tablerow einser no-padding">
+                        <select id="valueEinser" onchange="getValEinser()">
+                            <option value="0">—</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+
+                    </div>
                     <!-- Zweier -->
-                    <div class="tablerow zweier no-padding"><input id="valueZweier" type="number" placeholder="Zweier"
-                            min="2" max="10" onchange="getValZweier()" pattern="\d*" /></div>
+                    <div class="tablerow zweier no-padding"><select id="valueZweier" onchange="getValZweier()">
+                            <option value="0">—</option>
+                            <option value="2">2</option>
+                            <option value="4">4</option>
+                            <option value="6">6</option>
+                            <option value="8">8</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
                     <!-- Dreier -->
-                    <div class="tablerow dreier no-padding"><input id="valueDreier" type="number" placeholder="Dreier"
-                            min="3" max="15" onchange="getValDreier()" pattern="\d*" /></div>
+                    <div class="tablerow dreier no-padding"><select id="valueDreier" onchange="getValDreier()">
+                            <option value="0">—</option>
+                            <option value="3">3</option>
+                            <option value="6">6</option>
+                            <option value="9">9</option>
+                            <option value="12">12</option>
+                            <option value="15">15</option>
+                        </select></div>
                     <!-- Vierer -->
-                    <div class="tablerow vierer no-padding"><input id="valueVierer" type="number" placeholder="Vierer"
-                            min="4" max="20" onchange="getValVierer()" pattern="\d*" /></div>
+                    <div class="tablerow vierer no-padding"><select id="valueVierer" onchange="getValVierer()">
+                            <option value="0">—</option>
+                            <option value="4">4</option>
+                            <option value="8">8</option>
+                            <option value="12">12</option>
+                            <option value="16">16</option>
+                            <option value="20">20</option>
+                        </select></div>
                     <!-- Fünfer -->
-                    <div class="tablerow fuenfer no-padding"><input id="valueFuenfer" type="number" placeholder="Fünfer"
-                            min="5" max="25" onchange="getValFuenfer()" pattern="\d*" /></div>
+                    <div class="tablerow fuenfer no-padding"><select id="valueFuenfer" onchange="getValFuenfer()">
+                            <option value="0">—</option>
+                            <option value="5">5</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                            <option value="25">25</option>
+                        </select></div>
                     <!-- Sechser -->
-                    <div class="tablerow sechser no-padding"><input id="valueSechser" type="number"
-                            placeholder="Sechser" min="6" max="30" onchange="getValSechser()" pattern="\d*" /></div>
+                    <div class="tablerow sechser no-padding"><select id="valueSechser" onchange="getValSechser()">
+                            <option value="0">—</option>
+                            <option value="6">6</option>
+                            <option value="12">12</option>
+                            <option value="18">18</option>
+                            <option value="24">24</option>
+                            <option value="30">30</option>
+                        </select></div>
                     <!-- Separator Small-->
                     <div class="tablerow separator-small"></div>
                     <!-- Gesamt oben -->
