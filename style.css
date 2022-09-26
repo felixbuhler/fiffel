@@ -204,7 +204,7 @@ h1 {
     opacity: 1;
 }
 
-.tablerow input[type="checkbox"]:checked {
+.done .tablerow input[type="checkbox"]:checked {
     background: transparent;
 }
 
