@@ -208,6 +208,10 @@ h1 {
     background: transparent;
 }
 
+.player .tablerow input[type="checkbox"]:checked {
+    background: var(--color) !important;
+}
+
 input::placeholder {
     color: rgb(190, 190, 255);
 }
