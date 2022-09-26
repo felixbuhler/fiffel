@@ -13,7 +13,7 @@ Jede:r Spieler:in öffnet Fiffel auf dem eigenen Mobile Device.
 
 #### Kann man etwas streichen?
 
-In der rechtesten Spalte kann man einzelne Punkte streichen. Im Feld daneben sollte das — stehen bleiben.
+Als Gedächtnisstütze kann man in der rechtesten Spalte einzelne Punkte streichen. Im Feld daneben sollte das — stehen bleiben.
 
 #### Kann ich nachlesen, was wie viel zählt?
 
